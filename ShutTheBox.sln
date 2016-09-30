@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShutTheBox", "ShutTheBox\ShutTheBox.csproj", "{1A87D1C2-996F-4150-9B1C-2D36D21F589A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Release|iPhone.Build.0 = Release|iPhone
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{1A87D1C2-996F-4150-9B1C-2D36D21F589A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

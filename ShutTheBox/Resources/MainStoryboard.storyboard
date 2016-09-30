@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Shut The Box View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController definesPresentationContext="YES" id="vXZ-lx-hvc" customClass="ShutTheBoxViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="left" id="154" fixedFrame="YES" image="Background.png">
+                                <rect key="frame" x="0.0" y="0.0" width="379" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="43" fixedFrame="YES" hidden="YES">
+                                <rect key="frame" x="40" y="0.0" width="280" height="480"/>
+                                <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="About Shut The Box" lineBreakMode="tailTruncation" minimumFontSize="10" id="44" fixedFrame="YES" textAlignment="center">
+                                        <rect key="frame" x="2" y="36" width="236" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="50" fixedFrame="YES" numberOfLines="5">
+                                        <rect key="frame" x="2" y="76" width="236" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                        <string key="text">The game of "Shut The Box" has been played for centuries (even longer than the iPhone has been around), with hundreds of variations to the rules and scoring.</string>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="51" fixedFrame="YES" numberOfLines="6">
+                                        <rect key="frame" x="2" y="186" width="236" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                        <string key="text">This particular variation of the game is designed as a solo coffee break game. The design intent is to mimic the essence of a game which could, at its heart, be played with dice, a pencil and a piece of paper.</string>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="103" fixedFrame="YES" numberOfLines="2" text="For support email robert@inkrh.com.">
+                                        <rect key="frame" x="2" y="296" width="236" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="56" fixedFrame="YES" hidden="YES">
+                                <rect key="frame" x="40" y="0.0" width="280" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="95" fixedFrame="YES">
+                                        <rect key="frame" x="2" y="430" width="236" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
+                                        <state key="normal" title="clear scores">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ScoresClearButton_TouchUpInside:" destination="vXZ-lx-hvc" id="96" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="310" fixedFrame="YES">
+                                <rect key="frame" x="40" y="0.0" width="280" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5">
+                                        <rect key="frame" x="42" y="36" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="One.png">
+                                            <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                            <color key="titleShadowColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="11">
+                                        <rect key="frame" x="96" y="36" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Two.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="12">
+                                        <rect key="frame" x="150" y="36" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Three.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13">
+                                        <rect key="frame" x="42" y="90" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Four.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14">
+                                        <rect key="frame" x="96" y="90" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Five.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="15">
+                                        <rect key="frame" x="150" y="90" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Six.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16">
+                                        <rect key="frame" x="42" y="144" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Seven.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="17">
+                                        <rect key="frame" x="96" y="144" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Eight.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="18">
+                                        <rect key="frame" x="150" y="144" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="" image="Nine.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="22">
+                                        <rect key="frame" x="42" y="200" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                        <state key="normal" title="" image="Roll.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23">
+                                        <rect key="frame" x="150" y="200" width="48" height="48"/>
+                                        <color key="tintColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                        <state key="normal" title="" image="Roll.png">
+                                            <color key="titleColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-1" maxY="-1"/>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" id="31">
+                                        <rect key="frame" x="2" y="250" width="235" height="75"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" id="306">
+                                        <rect key="frame" x="2" y="340" width="235" height="75"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="100" fixedFrame="YES" opaque="NO">
+                                <rect key="frame" x="0.0" y="390.5" width="41" height="89.5"/>
+                                <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="101" fixedFrame="YES">
+                                        <rect key="frame" x="4" y="4" width="30" height="31.5"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                        <state key="normal" title="!">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ScoresButton_TouchUpInside:" destination="vXZ-lx-hvc" id="168" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="102" fixedFrame="YES">
+                                        <rect key="frame" x="4" y="42" width="30" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                        <state key="normal" title="?">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AboutBtn_TouchUpInside:" destination="vXZ-lx-hvc" id="110" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="DiceOne" destination="22" id="name-outlet-22"/>
+                        <outlet property="DiceTwo" destination="23" id="name-outlet-23"/>
+                        <outlet property="Eight" destination="17" id="name-outlet-17"/>
+                        <outlet property="Five" destination="14" id="name-outlet-14"/>
+                        <outlet property="Four" destination="13" id="name-outlet-13"/>
+                        <outlet property="Nine" destination="18" id="name-outlet-18"/>
+                        <outlet property="Seven" destination="16" id="name-outlet-16"/>
+                        <outlet property="Six" destination="15" id="name-outlet-15"/>
+                        <outlet property="Three" destination="12" id="name-outlet-12"/>
+                        <outlet property="Two" destination="11" id="name-outlet-11"/>
+                        <outlet property="total" destination="31" id="name-outlet-31"/>
+                        <outlet property="AboutView" destination="43" id="name-outlet-43"/>
+                        <outlet property="ScoresView" destination="56" id="name-outlet-56"/>
+                        <outlet property="ScoresClearButton" destination="95" id="name-outlet-95"/>
+                        <outlet property="ScoresButton" destination="101" id="name-outlet-101"/>
+                        <outlet property="AboutBtn" destination="102" id="name-outlet-102"/>
+                        <outlet property="BaseView" destination="kh9-bI-dsS" id="name-outlet-kh9-bI-dsS"/>
+                        <outlet property="CurrentScore" destination="306" id="name-outlet-306"/>
+                        <outlet property="GameBoard" destination="310" id="name-outlet-310"/>
+                        <outlet property="One" destination="5" id="name-outlet-5"/>
+                        <outlet property="AboutTitle" destination="44" id="name-outlet-44"/>
+                        <outlet property="BGImage" destination="154" id="name-outlet-154"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Eight.png" width="40" height="40"/>
+        <image name="Five.png" width="40" height="40"/>
+        <image name="Four.png" width="40" height="40"/>
+        <image name="Nine.png" width="40" height="40"/>
+        <image name="One.png" width="40" height="40"/>
+        <image name="Roll.png" width="40" height="40"/>
+        <image name="Seven.png" width="40" height="40"/>
+        <image name="Six.png" width="40" height="40"/>
+        <image name="Three.png" width="40" height="40"/>
+        <image name="Two.png" width="40" height="40"/>
+        <image name="iPhone6Template.png" width="1562" height="2778"/>
+        <image name="d1.png" width="40" height="40"/>
+        <image name="d2.png" width="40" height="40"/>
+        <image name="d3.png" width="40" height="40"/>
+        <image name="d4.png" width="40" height="40"/>
+        <image name="d5.png" width="40" height="40"/>
+        <image name="d6.png" width="40" height="40"/>
+        <image name="Reset.png" width="40" height="40"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="Icon-60.png" width="120" height="120"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon-Small-40.png" width="80" height="80"/>
+        <image name="Background.png" width="414" height="736"/>
+        <image name="appleberry.ttf" width="0" height="0"/>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
