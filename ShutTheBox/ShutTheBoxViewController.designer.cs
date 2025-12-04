@@ -32,10 +32,6 @@ namespace ShutTheBox
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIImageView BGImage { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel CurrentScore { get; set; }
 
 		[Outlet]
@@ -131,10 +127,6 @@ namespace ShutTheBox
 			if (BaseView != null) {
 				BaseView.Dispose ();
 				BaseView = null;
-			}
-			if (BGImage != null) {
-				BGImage.Dispose ();
-				BGImage = null;
 			}
 			if (CurrentScore != null) {
 				CurrentScore.Dispose ();
