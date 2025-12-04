@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="left" id="154" fixedFrame="YES" image="Background.png">
-                                <rect key="frame" x="0.0" y="0.0" width="379" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1613" height="2868"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="43" fixedFrame="YES" hidden="YES">
@@ -305,7 +305,7 @@
         <image name="Icon-60.png" width="120" height="120"/>
         <image name="Icon-Small.png" width="29" height="29"/>
         <image name="Icon-Small-40.png" width="80" height="80"/>
-        <image name="Background.png" width="414" height="736"/>
+        <image name="Background.png" width="1613" height="2868"/>
         <image name="appleberry.ttf" width="0" height="0"/>
     </resources>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

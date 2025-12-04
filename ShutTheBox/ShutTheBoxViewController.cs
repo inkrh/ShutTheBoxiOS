@@ -7,7 +7,8 @@ using System.IO;
 using System.Net;
 using Foundation;
 using UIKit;
-using Mono.Data.Sqlite;
+// using Mono.Data.Sqlite;
+using Microsoft.Data.Sqlite;
 using CoreGraphics;
 
 namespace ShutTheBox
@@ -487,11 +488,11 @@ namespace ShutTheBox
 					(element as UILabel).Font = UIFont.FromName ("appleberry", 14);
 				}
 			}
-
-			ScoresClearButton.Font = UIFont.FromName ("appleberry", 18);
+			
+			ScoresClearButton.TitleLabel.Font = UIFont.FromName ("appleberry", 18);
 			AboutTitle.Font = UIFont.FromName ("appleberry", 24);
-			AboutBtn.Font = UIFont.FromName ("appleberry", 32);
-			ScoresButton.Font = UIFont.FromName ("appleberry", 32);
+			AboutBtn.TitleLabel.Font = UIFont.FromName ("appleberry", 32);
+			ScoresButton.TitleLabel.Font = UIFont.FromName ("appleberry", 32);
 
 
 				var bgframe = BGImage.Frame;
