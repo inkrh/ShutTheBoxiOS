@@ -11,6 +11,8 @@ using UIKit;
 using Microsoft.Data.Sqlite;
 using CoreGraphics;
 
+//TODO: replace numbers.api use - service is no longer available
+
 namespace ShutTheBox
 {
 	public partial class ShutTheBoxViewController : UIViewController
@@ -49,7 +51,7 @@ namespace ShutTheBox
 				using (HttpWebResponse response = await request.GetResponseAsync() as HttpWebResponse)
 				{
 					if (response.StatusCode != HttpStatusCode.OK)
-						Debug.WriteLine("Error fetching data. Server returned status code: {0}", response.StatusCode);
+						Trace.WriteLine("Error fetching data. Server returned status code: {0}", response.StatusCode.ToString());
 						
 					using (StreamReader reader = new StreamReader(response.GetResponseStream()))
 					{
@@ -57,7 +59,7 @@ namespace ShutTheBox
 						if (content != null)
 						{
 
-							Debug.WriteLine(number + " - " + content.ToString());
+							Trace.WriteLine(number + " - " + content.ToString());
 							if (!facts.ContainsKey(Convert.ToInt32(number)))
 							{
 								facts.Add(Convert.ToInt32(number), content.ToString());
@@ -70,7 +72,7 @@ namespace ShutTheBox
 
 			}
 			} catch(Exception ex) {
-				Debug.WriteLine (ex.Message);
+				Trace.WriteLine (ex.Message);
 			}
 		}
 			
@@ -157,7 +159,7 @@ namespace ShutTheBox
 			}
 		}
 
-			
+// translation matrix, could do it an easier way, but this works			
 //			<outlet property="One" destination="5" id="name-outlet-5"/>
 //				<outlet property="Two" destination="11" id="name-outlet-11"/>
 //				<outlet property="Three" destination="12" id="name-outlet-12"/>
@@ -493,14 +495,6 @@ namespace ShutTheBox
 			AboutTitle.Font = UIFont.FromName ("appleberry", 24);
 			AboutBtn.TitleLabel.Font = UIFont.FromName ("appleberry", 32);
 			ScoresButton.TitleLabel.Font = UIFont.FromName ("appleberry", 32);
-
-
-				var bgframe = BGImage.Frame;
-				bgframe.X = 0;
-				bgframe.Y = 0;
-				bgframe.Height = 736;
-				BGImage.Frame = bgframe;
-
 
 		}
 
