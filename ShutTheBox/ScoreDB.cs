@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using Mono.Data.Sqlite;
+//using Mono.Data.Sqlite;
+using Microsoft.Data.Sqlite;
+
 namespace ShutTheBox
 {
 	public class ScoreDB
@@ -20,17 +22,13 @@ namespace ShutTheBox
 			{
 				if (!File.Exists (databaseFile))
 				{
-					SqliteConnection.CreateFile (databaseFile);
-					using (SqliteConnection sqlCon = new SqliteConnection (String.Format ("Data Source = {0};", databaseFile)))
-					{
-						sqlCon.Open ();
-						using (SqliteCommand sqlCom = new SqliteCommand (sqlCon))
-						{
-							sqlCom.CommandText = "CREATE TABLE Scores (ID INTEGER PRIMARY KEY, Score VARCHAR(255))";
-							sqlCom.ExecuteNonQuery ();
-						}
-						sqlCon.Close ();
-					}
+					        using (var connection = new SqliteConnection($"Filename={databaseFile}")) {
+								connection.Open();
+								var command = connection.CreateCommand();
+								command.CommandText = "CREATE TABLE Scores (ID INTEGER PRIMARY KEY, Score VARCHAR(255))";
+								command.ExecuteNonQuery();
+								connection.Close();
+								}
 					Debug.WriteLine( "Database created!");
 				} else {
 					Debug.WriteLine( "Database already exists!");
@@ -50,10 +48,10 @@ namespace ShutTheBox
 
 			try {
 				if (File.Exists(databaseFile)) {
-					using (SqliteConnection sqlCon = new SqliteConnection(String.Format("Data Source = {0};", databaseFile))) {
+					using (var sqlCon =new SqliteConnection($"Filename={databaseFile}")) {
 						sqlCon.Open();
-						using (SqliteCommand sqlCom = new SqliteCommand(sqlCon)) {
-
+						
+						using (var sqlCom = sqlCon.CreateCommand()) {
 							sqlCom.CommandText = String.Format("INSERT INTO Scores (Score) VALUES ('{0}')", score);
 							sqlCom.ExecuteNonQuery();
 						}
@@ -74,9 +72,9 @@ namespace ShutTheBox
 
 			try {
 				if (File.Exists(databaseFile)) {
-					using (SqliteConnection sqlCon = new SqliteConnection(String.Format("Data Source = {0};", databaseFile))) {
+					using (var sqlCon =new SqliteConnection($"Filename={databaseFile}")) {
 						sqlCon.Open();
-						using (SqliteCommand sqlCom = new SqliteCommand(sqlCon)) {
+						using (var sqlCom = sqlCon.CreateCommand()) {
 							sqlCom.CommandText = "SELECT * FROM Scores";
 							using (SqliteDataReader dbReader = sqlCom.ExecuteReader()) {
 								while (dbReader.Read()) {
@@ -104,9 +102,9 @@ namespace ShutTheBox
 		public void DeleteData(string databaseFile) {
 			try{
 				if(File.Exists(databaseFile)) {
-					using (SqliteConnection sqlCon = new SqliteConnection(String.Format("Data Source = {0};", databaseFile))) {
+					using (var sqlCon =new SqliteConnection($"Filename={databaseFile}")) {
 						sqlCon.Open();
-						using (SqliteCommand sqlCom = new SqliteCommand(sqlCon)) {
+						using (var sqlCom = sqlCon.CreateCommand()) {
 							sqlCom.CommandText = "DELETE from Scores";
 							sqlCom.ExecuteNonQuery();
 						}
